@@ -1,0 +1,308 @@
+<section class="index-page">
+    <div class="container">
+        <div class="toggle">
+            <input id="toggle" type="checkbox">
+            <label for="toggle"><span class="burger"></span></label>
+        </div>
+        <div class="registration">
+            <div class="fd">Registration Label - off</div>
+            <form id="registration" class="form">
+                <div class="form-loading">
+                    <div>
+                        <img src="img/loading-dark.svg" alt="Загрузка">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="reg_name" placeholder="имя" autocomplete="nope">
+                    <div class="form-error name">Имя</div>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="reg_phone" placeholder="телефон" data-mask="+7 (000) 000-00-00" autocomplete="off" maxlength="18">
+                    <div class="form-error phone"></div>
+                </div>
+                <div class="form-select">
+                    <input type="hidden" name="city" placeholder="Город" id="user_city" autocomplete="nope">
+                    <div class="select">
+                        <div class="select-input">
+                            <span>Выберите город</span>
+                            <svg class="icon icon-arrow-down">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="select-list scroll-template">
+                            <li>Аксу</li>
+                            <li>Актау</li>
+                            <li>Актобе</li>
+                            <li>Алматы</li>
+                            <li>Арал</li>
+                            <li>Астана</li>
+                            <li>Атырау</li>
+                            <li>Байконыр</li>
+                            <li>Балхаш</li>
+                            <li>Жанаозен</li>
+                            <li>Жезказган</li>
+                            <li>Караганды</li>
+                            <li>Кокшетау</li>
+                            <li>Костанай</li>
+                            <li>Кызылорда</li>
+                            <li>Павлодар</li>
+                            <li>Петропавловск</li>
+                            <li>Риддер</li>
+                            <li>Рудный</li>
+                            <li>Семей</li>
+                            <li>Талдыкорган</li>
+                            <li>Тараз</li>
+                            <li>Темиртау</li>
+                            <li>Туркестан</li>
+                            <li>Уральск</li>
+                            <li>Усть-Каменогорск</li>
+                            <li>Шымкент</li>
+                            <li>Экибастуз</li>
+                            <li>атбасар</li>
+                            <li>Щучинск</li>
+                            <li>степногорск</li>
+                            <li>Сатпаев</li>
+                            <li>Лисаковск</li>
+                            <li>Житикара</li>
+                            <li>Каскелен</li>
+                            <li>Капшагай</li>
+                            <li>Текели</li>
+                            <li>Аягоз</li>
+                            <li>Павлодарская область</li>
+                            <li> Мангистауская область</li>
+                            <li> Актюбинская область</li>
+                            <li>Кызылординская область</li>
+                            <li> Атырауская область</li>
+                            <li>Карагандинская область</li>
+                            <li>Акмолинская область</li>
+                            <li>Костанайская область</li>
+                            <li> Северо-Казахстанская область</li>
+                            <li>Восточно-Казахстанская область</li>
+                            <li>Алматинская область</li>
+                            <li> Жамбыльская область</li>
+                            <li>Южно-Казахстанская область</li>
+                            <li>Западно-Казахстанская область</li>
+                        </div>
+                    </div>
+                    <span class="form-error city"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="reg_email" placeholder="e-mail" autocomplete="nope">
+                    <div class="form-error email"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="code" placeholder="промо-код" class="code" autocomplete="nope" maxlength="8">
+                    <div class="form-error code">21212</div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="reg_password" placeholder="пароль">
+                    <div class="form-error password"></div>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="reg_password_confirm" placeholder="подтвердите пароль">
+                    <div class="form-error password"></div>
+                </div>
+                <div class="form-confirm">
+                    <label class="radio confirm-in">
+                        <input type="checkbox" name="reg_confirm">
+                        <div class="radio__text">согласен (на) с условиями конкурса</div>
+                    </label>
+                    <span class="form-error confirm"></span>
+                </div>
+                <input type="hidden" value="registration">
+                <input type="hidden" name="language" value="ru">
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <div class="fd">Registration Label - on</div>
+            <form id="registration" class="form">
+                <div class="form-loading">
+                    <div>
+                        <img src="img/loading-dark.svg" alt="Загрузка">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="reg_name">Ваше имя:</label>
+                    <input id="reg_name" type="text" name="reg_name" placeholder="имя" autocomplete="nope">
+                    <div class="form-error name">Имя</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg_phone">Ваш номер телефона:</label>
+                    <input id="reg_phone" type="tel" name="reg_phone" placeholder="телефон" data-mask="+7 (000) 000-00-00" autocomplete="off" maxlength="18">
+                    <div class="form-error phone"></div>
+                </div>
+                <div class="form-select">
+                    <label for="city">Укажите город:</label>
+                    <input type="hidden" name="city" placeholder="Город" id="user_city" autocomplete="nope">
+                    <div class="select">
+                        <div id="city" class="select-input">
+                            <span>Выберите город*</span>
+                            <svg class="icon icon-arrow-down">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="select-list scroll-template">
+                            <li>Аксу</li>
+                            <li>Актау</li>
+                            <li>Актобе</li>
+                            <li>Алматы</li>
+                            <li>Арал</li>
+                            <li>Астана</li>
+                            <li>Атырау</li>
+                            <li>Байконыр</li>
+                            <li>Балхаш</li>
+                            <li>Жанаозен</li>
+                            <li>Жезказган</li>
+                            <li>Караганды</li>
+                            <li>Кокшетау</li>
+                            <li>Костанай</li>
+                            <li>Кызылорда</li>
+                            <li>Павлодар</li>
+                            <li>Петропавловск</li>
+                            <li>Риддер</li>
+                            <li>Рудный</li>
+                            <li>Семей</li>
+                            <li>Талдыкорган</li>
+                            <li>Тараз</li>
+                            <li>Темиртау</li>
+                            <li>Туркестан</li>
+                            <li>Уральск</li>
+                            <li>Усть-Каменогорск</li>
+                            <li>Шымкент</li>
+                            <li>Экибастуз</li>
+                            <li>атбасар</li>
+                            <li>Щучинск</li>
+                            <li>степногорск</li>
+                            <li>Сатпаев</li>
+                            <li>Лисаковск</li>
+                            <li>Житикара</li>
+                            <li>Каскелен</li>
+                            <li>Капшагай</li>
+                            <li>Текели</li>
+                            <li>Аягоз</li>
+                            <li>Павлодарская область</li>
+                            <li> Мангистауская область</li>
+                            <li> Актюбинская область</li>
+                            <li>Кызылординская область</li>
+                            <li> Атырауская область</li>
+                            <li>Карагандинская область</li>
+                            <li>Акмолинская область</li>
+                            <li>Костанайская область</li>
+                            <li> Северо-Казахстанская область</li>
+                            <li>Восточно-Казахстанская область</li>
+                            <li>Алматинская область</li>
+                            <li> Жамбыльская область</li>
+                            <li>Южно-Казахстанская область</li>
+                            <li>Западно-Казахстанская область</li>
+                        </div>
+                    </div>
+                    <span class="form-error city"></span>
+                </div>
+                <div class="form-group">
+                    <label for="reg_email">Ваш e-mail:</label>
+                    <input id="reg_email" type="email" name="reg_email" placeholder="e-mail" autocomplete="nope">
+                    <div class="form-error email"></div>
+                </div>
+                <div class="form-group">
+                    <label for="promo_code">Введите промо-код:</label>
+                    <input id="promo_code" type="text" name="code" placeholder="промо-код" class="code" autocomplete="nope" maxlength="8">
+                    <div class="form-error code">21212</div>
+                </div>
+                <div class="form-group">
+                    <label for="reg_password">Введите пароль:</label>
+                    <input id="reg_password" type="text" name="reg_password" placeholder="пароль" autocomplete="nope">
+                    <div class="form-error password"></div>
+                </div>
+                <div class="form-group">
+                    <label for="reg_password_confirm">Подтвердите пароль:</label>
+                    <input id="reg_password_confirm" type="text" name="reg_password_confirm" placeholder="подтвердите пароль" autocomplete="nope">
+                    <div class="form-error password"></div>
+                </div>
+                <div class="form-confirm">
+                    <label class="radio confirm-in">
+                        <input type="checkbox" name="reg_confirm">
+                        <div class="radio__text">согласен (на) с условиями конкурса</div>
+                    </label>
+                    <span class="form-error confirm"></span>
+                </div>
+                <input type="hidden" value="registration">
+                <input type="hidden" name="language" value="ru">
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+            <div class="fd">Auth form</div>
+            <form id="auth" class="form">
+                <div class="form-loading">
+                    <div>
+                        <img src="img/loading-dark.svg" alt="Загрузка">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-phone">Ваш e-mail/телефон:</label>
+                    <input id="login-phone" type="tel" name="phone" placeholder="телефон" data-mask="+7 (000) 000-00-00" autocomplete="off" maxlength="18">
+                    <div class="form-error phone"></div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Ваш пароль:</label>
+                    <input id="login-password" type="password" name="password" placeholder="пароль" autocomplete="nope">
+                    <div class="form-error password"></div>
+                </div>
+                <div class="form-group">
+                    <a class="show" data-modal=".reset">Забыли пароль?</a>
+                </div>
+                <input type="hidden" value="auth">
+                <input type="hidden" name="language" value="ru">
+                <button type="submit">Войти</button>
+                <button class="show" data-modal=".registration">Зарегистрироваться</button>
+            </form>
+            <div class="fd">Password recover</div>
+            <form id="change" class="form">
+                <div class="form-loading">
+                    <div>
+                        <img src="img/loading-dark.svg" alt="Загрузка">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="change_phone">Ваш e-mail/телефон:</label>
+                    <input id="change_phone" type="tel" name="change_phone" placeholder="телефон*" data-mask="+7 (000) 000-00-00" autocomplete="off" maxlength="18">
+                    <div class="form-error phone"></div>
+                </div>
+                <input type="hidden" value="change">
+                <input type="hidden" name="language" value="ru">
+                <button type="submit">Востановить</button>
+            </form>
+            <div class="fd">Password recover confirm</div>
+            <form id="password-recover" class="form">
+                <div class="form-loading">
+                    <div>
+                        <img src="img/loading-dark.svg" alt="Загрузка">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="recover_code">Код восстановления:</label>
+                    <input id="recover_code" type="text" name="recover_code" placeholder="код востановления">
+                    <div class="form-error recover_code"></div>
+                </div>
+                <div class="form-group">
+                    <label for="recover_password">Новый пароль:</label>
+                    <input id="recover_password" type="password" name="recover_password" placeholder="новый пароль">
+                    <div class="form-error recover_password"></div>
+                </div>
+                <input type="hidden" value="password-recover">
+                <input type="hidden" name="language" value="ru">
+                <button type="submit">Востановить</button>
+            </form>
+            <div class="fd">Modals</div>
+            <a href="" class="show" data-modal=".video">Видео 16к9</a>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal">
+    <div class="modal__content modal__video video">
+        <button class="close-icon close">
+            <svg class="icon icon-close">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <iframe class="video-youtube" src="https://www.youtube.com/embed/kMWbMFgbdXY?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer" "="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="width: 1333px; height: 749.813px;"></iframe></div>
+</div>

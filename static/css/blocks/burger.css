@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* Burger Icon VARS */
+/* Registration form vars*/
+/* Инпуты */
+/* Выбор города */
+/* Подтверждение условий конкурса */
+/* Кнопка */
+/* Label */
+/* Burger Icon */
+.toggle {
+  width: 4rem;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 0 .5rem; }
+  .toggle input {
+    display: none; }
+    .toggle input:checked + label:before {
+      -webkit-animation: animationOne 1s ease forwards;
+      animation: animationOne 1s ease forwards; }
+    .toggle input:checked + label:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -2px;
+      width: 100%;
+      height: 0.3rem;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background: #2e2382; }
+    .toggle input:checked + label:after {
+      -webkit-animation: animationTwo 1s ease forwards;
+      animation: animationTwo 1s ease forwards; }
+    .toggle input:checked + label .burger:before {
+      -webkit-animation: animationBurgerTop 1s ease forwards;
+      animation: animationBurgerTop 1s ease forwards; }
+    .toggle input:checked + label .burger:after {
+      -webkit-animation: animationBurgerBottom 1s ease forwards;
+      animation: animationBurgerBottom 1s ease forwards; }
+  .toggle label {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    background: transparent; }
+    .toggle label:before, .toggle label:after {
+      content: '';
+      position: absolute;
+      margin-top: -2px;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      background: #2e2382;
+      top: 50%;
+      width: 100%;
+      height: 0.3rem; }
+    .toggle label:before {
+      -webkit-animation: animationOneReverse 1s ease forwards;
+      animation: animationOneReverse 1s ease forwards; }
+    .toggle label:after {
+      -webkit-animation: animationTwoReverse 1s ease forwards;
+      animation: animationTwoReverse 1s ease forwards; }
+    .toggle label .burger:before, .toggle label .burger:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      background: #2e2382;
+      height: 0.3rem; }
+    .toggle label .burger:before {
+      top: 0.9rem;
+      -webkit-animation: animationBurgerTopReverse 1s ease forwards;
+      animation: animationBurgerTopReverse 1s ease forwards; }
+    .toggle label .burger:after {
+      bottom: 1rem;
+      -webkit-animation: animationBurgerBottomReverse 1s ease forwards;
+      animation: animationBurgerBottomReverse 1s ease forwards; }
+
+@-webkit-keyframes animationOneReverse {
+  0% {
+    -webkit-transform: rotate(315deg); }
+  25% {
+    -webkit-transform: rotate(360deg); }
+  50%, 100% {
+    -webkit-transform: rotate(0deg); } }
+
+@keyframes animationOneReverse {
+  0% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg); }
+  25% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@-webkit-keyframes animationOne {
+  0%, 50% {
+    -webkit-transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(315deg); } }
+
+@keyframes animationOne {
+  0%, 50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+  100% {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg); } }
+
+@-webkit-keyframes animationTwoReverse {
+  0% {
+    -webkit-transform: rotate(405deg); }
+  25% {
+    -webkit-transform: rotate(450deg); }
+  50%, 100% {
+    -webkit-transform: rotate(0deg); } }
+
+@keyframes animationTwoReverse {
+  0% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg); }
+  25% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg); }
+  50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@-webkit-keyframes animationTwo {
+  0%, 50% {
+    -webkit-transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(450deg); }
+  100% {
+    -webkit-transform: rotate(405deg); } }
+
+@keyframes animationTwo {
+  0%, 50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg); }
+  100% {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg); } }
+
+@-webkit-keyframes animationBurgerTopReverse {
+  0%, 50% {
+    -webkit-transform: translateY(0.9rem);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateY(0.9rem);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes animationBurgerTopReverse {
+  0%, 50% {
+    -webkit-transform: translateY(0.9rem);
+            transform: translateY(0.9rem);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateY(0.9rem);
+            transform: translateY(0.9rem);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes animationBurgerTop {
+  0% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateY(0.9rem);
+    opacity: 1; }
+  51%, 100% {
+    -webkit-transform: translateY(0.9rem);
+    opacity: 0; } }
+
+@keyframes animationBurgerTop {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateY(0.9rem);
+            transform: translateY(0.9rem);
+    opacity: 1; }
+  51%, 100% {
+    -webkit-transform: translateY(0.9rem);
+            transform: translateY(0.9rem);
+    opacity: 0; } }
+
+@-webkit-keyframes animationBurgerBottomReverse {
+  0%, 50% {
+    -webkit-transform: translateY(-0.9rem);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateY(-0.9rem);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; } }
+
+@keyframes animationBurgerBottomReverse {
+  0%, 50% {
+    -webkit-transform: translateY(-0.9rem);
+            transform: translateY(-0.9rem);
+    opacity: 0; }
+  51% {
+    -webkit-transform: translateY(-0.9rem);
+            transform: translateY(-0.9rem);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes animationBurgerBottom {
+  0% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateY(-0.9rem);
+    opacity: 1; }
+  51%, 100% {
+    -webkit-transform: translateY(-0.9rem);
+    opacity: 0; } }
+
+@keyframes animationBurgerBottom {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1; }
+  50% {
+    -webkit-transform: translateY(-0.9rem);
+            transform: translateY(-0.9rem);
+    opacity: 1; }
+  51%, 100% {
+    -webkit-transform: translateY(-0.9rem);
+            transform: translateY(-0.9rem);
+    opacity: 0; } }

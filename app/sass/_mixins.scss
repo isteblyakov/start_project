@@ -1,0 +1,72 @@
+@import 'mq';
+
+//Медиа-запросы
+@mixin media {
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  @include mq($from: mobile) {
+    width: 54rem;
+  }
+  @include mq($from: tablet) {
+    width: 70rem;
+  }
+  @include mq($from: desktop) {
+    width: 92rem;
+  }
+  @include mq($from: wide) {
+    width: 115rem;
+  }
+}
+
+//Анимация
+@mixin anim {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+//Абсолютное позицировнаие на всю ширину экрана
+@mixin absolute {
+  position: absolute;
+  top:  0;
+  left:  0;
+  right:  0;
+  bottom:  0;
+  height:  100%;
+  width:  100%;
+}
+
+//Flexbox
+@mixin flex($jc, $ai, $fw: null) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  @if ($fw) {
+    flex-wrap: $fw;
+  }
+}
+
+//Скрыть/показать блок
+@mixin hide-show($var) {
+  @if $var == hide {
+    opacity:  0;
+    pointer-events: none;
+    visibility: hidden;
+    @include anim();
+  } @else if $var == show {
+    opacity:  1;
+    pointer-events: all;
+    visibility: visible;
+    @include anim();
+  }
+}
+
+//Медиа-запросы
+$mq-breakpoints: (
+        mobile: 320px,
+        tablet: 768px,
+        desktop: 992px,
+        wide: 1200px
+);

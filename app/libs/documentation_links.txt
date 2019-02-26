@@ -1,0 +1,4 @@
+1. Jquey-mask: https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html
+2. Magnific-popup: http://dimsemenov.com/plugins/magnific-popup/
+3. Slick: http://kenwheeler.github.io/slick/
+4. Swiper: http://idangero.us/swiper/
